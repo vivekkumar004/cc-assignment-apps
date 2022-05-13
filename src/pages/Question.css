@@ -1,0 +1,10 @@
+.question-no{
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 5px;
+    background-color: grey;
+}
+
+.question-no:hover{
+    background:none;
+}

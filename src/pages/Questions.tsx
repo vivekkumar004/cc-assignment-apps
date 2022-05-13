@@ -3,6 +3,7 @@ import QuestionCard, { QuestionType } from "../components/QuestionCard";
 import questions from "../questions.json";
 import { Box, Button, Typography, CircularProgress } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import './Question.css';
 
 const TOTAL_QUESTIONS = questions.length;
 
@@ -23,6 +24,11 @@ const Questions = () => {
     }
   }
 
+  function handleChange(question: any) {
+    setCurrentQuestion(question);
+    question.target.style.color = 'red';
+}
+
   return (
     <Box
       height="100vh"
@@ -37,7 +43,13 @@ const Questions = () => {
           (question, index) =>
             currentQuestion === question.id && (
               <Box key={question.id}>
-                <Typography variant="h3">Question: {index + 1}</Typography>
+                <Typography variant="h3">Question: {index + 1}
+                <Button className="question-no" id="1" variant="contained" onClick={() => handleChange(1)}>1</Button>
+                   <Button className="question-no" id="2" variant="contained" onClick={() => handleChange(2)}>2</Button>
+                   <Button className="question-no" id="3" variant="contained" onClick={() => handleChange(3)}>3</Button>
+                   <Button className="question-no" id="4" variant="contained" onClick={() => handleChange(4)}>4</Button>
+                   <Button className="question-no" id="5" variant="contained" onClick={() => handleChange(5)}>5</Button>
+                </Typography>
                 <Box
                   height="500px"
                   display="flex"

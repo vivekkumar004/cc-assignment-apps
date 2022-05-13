@@ -26,5 +26,27 @@
     "question": "List down all the lifecycle methods in React",
     "questionType": "textInput",
     "answerOptions": [{ "option": "componentDidMount", "isCorrect": true }]
+  },
+  {
+    "id": 4,
+    "question": "Capital of India?",
+    "questionType": "radio",
+    "answerOptions": [
+      { "option": "bangalore", "isCorrect": false },
+      { "option": "delhi", "isCorrect": true },
+      { "option": "mumbai", "isCorrect": false },
+      { "option": "patna", "isCorrect": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "parts of human body",
+    "questionType": "checkbox",
+    "answerOptions": [
+      { "option": "brain", "isCorrect": true },
+      { "option": "heart", "isCorrect": true },
+      { "option": "engine", "isCorrect": false },
+      { "option": "fuel", "isCorrect": false }
+    ]
   }
 ]
